@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     private void  getResponse(String message){
         chatsModalArrayList.add(new ChatsModal(message,USER_KEY));
         chatRVAdapter.notifyDataSetChanged();
-        String url = "http://api.brainshop.ai/get?bid=156451&key=RdjOJWhMeR2JDdOW&uid=[uid]&msg= " + message;
+        String url = "ENTER YOUR API KEY HERE" + message;
         String BASE_URL ="http://api.brainshop.ai/";
 
         String ans = Toast.makeText(this, url, Toast.LENGTH_LONG).toString();
@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 .build();
         RetrofitAPI retrofitAPI = retrofit.create(RetrofitAPI.class);
         Call<MsgModal> call = retrofitAPI.getMessage(url);
-//        Log.d("testt",call.toString());
         call.enqueue(new Callback<MsgModal>() {
             @Override
             public void onResponse(Call<MsgModal> call, Response<MsgModal> response) {
