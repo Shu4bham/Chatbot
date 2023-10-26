@@ -5,5 +5,5 @@ You will need an API key from Brainshop to use the chatbot service. You can obta
 
 Place the API in mainactivity.java file with your actual Brainshop API key.
 
-#Build and Run
+# Build and Run
 Now that you have inserted your API key, you can build and run the Android Chatbot App using Android Studio. Connect your Android device or use an emulator to test the app.
